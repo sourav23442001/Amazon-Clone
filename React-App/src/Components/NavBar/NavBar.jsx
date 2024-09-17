@@ -1,6 +1,6 @@
 import React from "react";
 import { SlLocationPin } from "react-icons/sl";
-import { IoSearchSharp } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 import { FaSortDown } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import "./navBar.css";
@@ -29,28 +29,31 @@ const NavBar = () => {
             className="input-box"
           />
           <button className="search-btn">
-            <IoSearchSharp />
+            <IoSearch />
           </button>
         </div>
         <div className="language-cont">
           <img src="/Flag-India.png" alt="flag" className="flag" />
-          <span>
+          <span className="lang">
             EN <FaSortDown />
           </span>
         </div>
         <div className="sign-up-cont">
-          <span>Hello, sign in</span>
-          <h3>
+          Hello, sign in
+          <h2 className="acc">
             Account & Lists <FaSortDown />
-          </h3>
+          </h2>
         </div>
         <div className="returns-order">
-          Returns <br /> <h3>& Orders</h3>
+          Returns
+          <h2 className="order">& Orders</h2>
         </div>
         <div className="shopping-cart">
-          <h3>
-            <FiShoppingCart /> Cart
-          </h3>
+          <h2 className="order-icon">
+            <span className="count">0</span>
+            <FiShoppingCart />
+          </h2>
+          Cart
         </div>
       </div>
     </nav>
